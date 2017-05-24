@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">2Travel</string>
+    <string name="title_activity_hotel">Añadir hotel</string>
+    <string name="title_activity_nuevo_viaje">Añadir nuevo viaje</string>
+    <string name="title_activity_mapa">Añadir mapa</string>
+    <string name="title_activity_nuevo_elemento">Añadir elemento</string>
+    <string name="title_activity_tiempo">Predicción de </string>
+    <string name="title_activity_nueva_tarea">Nueva Tarea</string>
+    <string name="title_activity_vista_mapa">Ver Mapa </string>
+
+    <string name="preference_primera_vez">FIRST_RUN</string>
+
+    <string name="txt_viaje_incial">Parece que aún no tienes ningún viaje :(</string>
+    <string name="boton_viaje_inicial">¡Añade tu primer viaje!</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="boton_anadir">Añadir</string>
+
+    <string name="action_configuracion">Configuración</string>
+    <string name="action_sobre_desarrolladores">Acerca de los desarrolladores</string>
+    <string name="action_nuevo_viaje">Nuevo Viaje</string>
+
+    <string name="hint_fecha">dd/mm/aaaa</string>
+    <string name="hint_hora">hh:mm</string>
+
+    <string name="txt_nombre_nuevo_viaje">Nombre del viaje:</string>
+    <string name="edit_nombre_nuevo_viaje">Ej: Viaje a Budapest</string>
+    <string name="txt_pais_nuevo_viaje">País de destino:</string>
+    <string name="txt_ciudad_nuevo_viaje">Ciudad de destino:</string>
+    <string name="edit_ciudad_nuevo_viaje">Ej: Budapest</string>
+    <string name="hint_selecciona_pais">Selecciona País</string>
+    <string name="txt_fecha_salida_viaje">Fecha de salida:</string>
+    <string name="txt_fecha_regreso_viaje">Fecha de regreso:</string>
+
+    <string name="txt_nombre_hotel">Nombre del hotel:</string>
+    <string name="edit_nombre_hotel">Ej: Hotel Continental</string>
+    <string name="txt_dirección_hotel">Dirección del hotel:</string>
+    <string name="edit_direccion_hotel">Ej: Calle Blablabla 25</string>
+    <string name="txt_fecha_cin_hotel">Fecha de Check-In:</string>
+    <string name="txt_fecha_cout_hotel">Fecha de Check-Out:</string>
+    <string name="txt_hora_cin_hotel">Hora de Check-In:</string>
+    <string name="txt_hora_cout_hotel">Hora de Check-Out:</string>
+
+    <string name="title_activity_vuelo">Añadir vuelo</string>
+    <string name="txt_id_vuelo">ID del vuelo:</string>
+    <string name="edit_id_vuelo">Ej: RYR 2222</string>
+    <string name="txt_aeropuerto_origen">Aeropuerto de origen (Código IATA):</string>
+    <string name="edit_aeropuerto_origen">Ej: MAD</string>
+    <string name="txt_aeropuerto_destino">Aeropuerto de destino (Código IATA):</string>
+    <string name="edit_aeropuerto_destino">Ej: BUD</string>
+    <string name="txt_fecha_vuelo">Fecha del vuelo:</string>
+    <string name="txt_hora_vuelo">Hora del vuelo:</string>
+    <string name="title_activity_lista_viaje">ListaViajeActivity</string>
+
+    <string name="dialog_title">Aviso</string>
+    <string name="dialog_title_tutorial">Tutorial</string>
+    <string name="dialog_title_atencion">Atención</string>
+    <string name="dialog_title_desarrolladores">Desarrollado por</string>
+    <string name="dialog_aceptar">Aceptar</string>
+    <string name="dialog_cancelar">Cancelar</string>
+    <string name="dialog_continuar">Continuar</string>
+    <string name="dialog_content_campos_vacios">Hay campos vacíos en el formulario.</string>
+    <string name="dialog_content_eliminar_viaje">¿Estás seguro de que deseas eliminar este viaje?</string>
+    <string name="dialog_content_tutorial">Bienvenido/a a la vista de viaje. Pulsa el icono (+) en la esquina superior derecha para añadir elementos al viaje.</string>
+    <string name="dialog_content_desarrolladores">Aitor Escolar (100306388)\nIgnacio Domínguez (100306050)</string>
+
+    <string name="txt_humedad">Humedad: </string>
+
+    <string name="weather_sunny">&#xf00d;</string>
+    <string name="weather_clear_night">&#xf02e;</string>
+    <string name="weather_foggy">&#xf014;</string>
+    <string name="weather_cloudy">&#xf013;</string>
+    <string name="weather_rainy">&#xf019;</string>
+    <string name="weather_snowy">&#xf01b;</string>
+    <string name="weather_thunder">&#xf01e;</string>
+    <string name="weather_drizzle">&#xf01c;</string>
+
+</resources>

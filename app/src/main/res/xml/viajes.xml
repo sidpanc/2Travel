@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<viajes>
+    <viaje
+    nombre="Budapest"
+    pais="Hungría"
+    moneda="Florín Húngaro"
+    />
+    <viaje
+    nombre="Oporto"
+    pais="Portugal"
+    moneda="Euro"
+    />
+
+    <viaje
+    nombre="Turquía"
+    pais="Estambul"
+    moneda="No se sabe"
+    />
+
+</viajes>

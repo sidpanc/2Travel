@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_vuelo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.a2travel.NuevoVueloActivity"
+    tools:showIn="@layout/activity_nuevo_vuelo">
+
+
+    <TextView android:id="@+id/txt_id_vuelo"
+        android:text="@string/txt_id_vuelo"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText android:id="@+id/edit_id_vuelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_id_vuelo"
+        android:ems="20"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:layout_below="@+id/txt_id_vuelo"
+        android:layout_alignParentStart="true" />
+
+    <TextView android:id="@+id/txt_aeropuerto_origen"
+        android:text="@string/txt_aeropuerto_origen"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/element_margin"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/edit_id_vuelo" />
+
+    <EditText android:id="@+id/edit_aeropuerto_origen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_aeropuerto_origen"
+        android:ems="20"
+        android:maxLines="1"
+        android:maxLength="3"
+        android:inputType="textCapCharacters"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:layout_below="@+id/txt_aeropuerto_origen"
+        android:layout_alignParentStart="true" />
+
+    <TextView android:id="@+id/txt_aeropuerto_destino"
+        android:text="@string/txt_aeropuerto_destino"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_marginTop="@dimen/element_margin"
+        android:imeOptions="actionNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/edit_aeropuerto_origen" />
+
+    <EditText android:id="@+id/edit_aeropuerto_destino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_aeropuerto_destino"
+        android:ems="20"
+        android:maxLines="1"
+        android:maxLength="3"
+        android:inputType="textCapCharacters"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:layout_below="@+id/txt_aeropuerto_destino"
+        android:layout_alignParentStart="true" />
+
+    <TextView android:id="@+id/txt_fecha_vuelo"
+        android:text="@string/txt_fecha_vuelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_aeropuerto_destino"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/element_margin" />
+
+    <EditText android:id="@+id/edit_fecha_vuelo"
+        android:inputType="date"
+        android:focusable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_fecha_vuelo"
+        android:hint="@string/hint_fecha"
+        android:ems="20"
+        android:onClick="showDatePickerVuelo" />
+
+    <TextView android:id="@+id/txt_hora_vuelo"
+        android:text="@string/txt_hora_vuelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_fecha_vuelo"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/element_margin" />
+
+    <EditText android:id="@+id/edit_hora_vuelo"
+        android:inputType="date"
+        android:focusable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_hora_vuelo"
+        android:hint="@string/hint_hora"
+        android:onClick="showTimePickerVuelo" />
+
+    <Button android:id="@+id/boton_anadir"
+        android:text="@string/boton_anadir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/element_margin"
+        android:layout_below="@+id/edit_hora_vuelo"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/white_form"
+        android:onClick="onAddVueloClick" />
+
+</RelativeLayout>

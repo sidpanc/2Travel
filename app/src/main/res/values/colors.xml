@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#D34208</color>
+    <color name="colorPrimaryDark">#b43908</color>
+    <color name="colorAccent">#E2975E</color>-->
+    <color name="colorPrimary">#F38630</color>
+    <color name="colorPrimaryDark">#FA6900</color>
+    <color name="colorAccent">#E0E4CC</color>
+    <color name="color1Lista">#A7DBD8</color>
+    <color name="color2Lista">#69D2E7</color>
+    <color name="color3Lista">#F7E07E</color>
+
+
+
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="white_form">#eeeeee</color>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single" android:id="@+id/menu_viajes">
+
+    </group>
+
+    <item
+        android:id="@+id/action_nuevo_viaje"
+        android:orderInCategory="5000"
+        android:title="@string/action_nuevo_viaje"/>
+
+    <group android:id="@+id/about_menu">
+
+        <item
+            android:id="@+id/action_sobre_desarrolladores"
+            android:orderInCategory="7000"
+            android:title="@string/action_sobre_desarrolladores" />
+
+    </group>
+</menu>

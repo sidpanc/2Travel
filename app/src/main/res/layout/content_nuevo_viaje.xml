@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_nuevo_viaje"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.a2travel.NuevoViajeActivity"
+    tools:showIn="@layout/activity_nuevo_viaje">
+
+
+    <TextView android:id="@+id/txt_nombre_viaje"
+        android:text="@string/txt_nombre_nuevo_viaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText android:id="@+id/edit_nombre_viaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_nombre_nuevo_viaje"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:ems="20"
+        android:layout_below="@+id/txt_nombre_viaje"
+        android:layout_alignParentStart="true" />
+
+    <TextView android:id="@+id/txt_pais_destino"
+        android:text="@string/txt_pais_nuevo_viaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_nombre_viaje"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/element_margin" />
+
+    <com.a2travel.core.PaisAutocompleteTextView
+        android:id="@+id/autocomplete_pais"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_pais_destino"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/hint_selecciona_pais"  />
+
+    <TextView android:id="@+id/txt_ciudad_viaje"
+        android:text="@string/txt_ciudad_nuevo_viaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/autocomplete_pais"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/element_margin" />
+
+    <com.a2travel.core.CiudadAutoCompleteTextView
+        android:id="@+id/autocomplete_ciudad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_ciudad_nuevo_viaje"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:ems="20"
+        android:layout_below="@id/txt_ciudad_viaje"
+        android:layout_alignParentStart="true"
+        android:enabled="false" />
+
+    <TextView android:id="@+id/txt_viaje_fecha_salida"
+        android:text="@string/txt_fecha_salida_viaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/autocomplete_ciudad"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/element_margin" />
+
+    <EditText android:id="@+id/edit_nuevoViaje_fecha_salida"
+        android:inputType="date"
+        android:focusable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_viaje_fecha_salida"
+        android:hint="@string/hint_fecha"
+        android:ems="20"
+        android:onClick="showDatePickerViaje" />
+
+    <TextView android:id="@+id/txt_viaje_fecha_regreso"
+        android:text="@string/txt_fecha_regreso_viaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_nuevoViaje_fecha_salida"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/element_margin" />
+
+    <EditText android:id="@+id/edit_nuevoViaje_fecha_regreso"
+        android:inputType="date"
+        android:focusable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_viaje_fecha_regreso"
+        android:hint="@string/hint_fecha"
+        android:ems="20"
+        android:onClick="showDatePickerViaje" />
+
+    <Button android:id="@+id/boton_anadir"
+        android:text="@string/boton_anadir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onAddViajeClick"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/white_form"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp" />
+
+</RelativeLayout>

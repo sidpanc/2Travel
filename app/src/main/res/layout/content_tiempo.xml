@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_tiempo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:layout_marginBottom="50dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.a2travel.PrediccionActivity"
+    tools:showIn="@layout/activity_tiempo" >
+
+    <!-- PREDICCIÓN DÍA ACTUAL-->
+    <TextView
+        android:id="@+id/tiempo_ciudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tiempo_dia1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tiempo_ciudad"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tiempo_icono1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tiempo_dia1"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="70dp" />
+
+    <TextView
+        android:id="@+id/tiempo_temp_actual1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tiempo_icono1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/tiempo_humedad1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tiempo_temp_actual1"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <!-- PREDICCIÓN DÍA 2-->
+            <TextView android:id="@+id/tiempo_dia2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp" />
+
+            <TextView
+                android:id="@+id/tiempo_icono2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tiempo_dia2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp" />
+
+            <TextView
+                android:id="@+id/tiempo_temp_actual2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tiempo_icono2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp" />
+
+            <TextView
+                android:id="@+id/tiempo_humedad2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tiempo_temp_actual2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp" />
+
+            <!-- PREDICCIÓN DÍA 3 -->
+            <TextView android:id="@+id/tiempo_dia3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_toRightOf="@id/tiempo_dia2"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp" />
+
+            <TextView
+                android:id="@+id/tiempo_icono3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tiempo_dia3"
+                android:layout_toRightOf="@id/tiempo_dia2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp" />
+
+            <TextView
+                android:id="@+id/tiempo_temp_actual3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tiempo_icono3"
+                android:layout_toRightOf="@id/tiempo_dia2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp" />
+
+            <TextView
+                android:id="@+id/tiempo_humedad3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tiempo_dia2"
+                android:layout_below="@+id/tiempo_temp_actual3"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp" />
+
+            <!-- PREDICCIÓN DÍA 4 -->
+            <TextView android:id="@+id/tiempo_dia4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_toRightOf="@id/tiempo_dia3"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp" />
+
+            <TextView
+                android:id="@+id/tiempo_icono4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tiempo_dia4"
+                android:layout_toRightOf="@id/tiempo_dia3"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp" />
+
+            <TextView
+                android:id="@+id/tiempo_temp_actual4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tiempo_icono4"
+                android:layout_toRightOf="@id/tiempo_dia3"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp" />
+
+            <TextView
+                android:id="@+id/tiempo_humedad4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tiempo_dia3"
+                android:layout_below="@+id/tiempo_temp_actual4"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp" />
+
+            <!-- PREDICCIÓN DÍA 5 -->
+            <TextView android:id="@+id/tiempo_dia5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_toRightOf="@id/tiempo_dia4"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp" />
+
+            <TextView
+                android:id="@+id/tiempo_icono5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tiempo_dia5"
+                android:layout_toRightOf="@id/tiempo_dia4"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp" />
+
+            <TextView
+                android:id="@+id/tiempo_temp_actual5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tiempo_icono5"
+                android:layout_toRightOf="@id/tiempo_dia4"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp" />
+
+            <TextView
+                android:id="@+id/tiempo_humedad5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tiempo_dia4"
+                android:layout_below="@+id/tiempo_temp_actual5"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp" />
+
+
+            <!-- PREDICCIÓN DÍA 6 -->
+            <TextView android:id="@+id/tiempo_dia6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_toRightOf="@id/tiempo_dia5"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp" />
+
+            <TextView
+                android:id="@+id/tiempo_icono6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tiempo_dia6"
+                android:layout_toRightOf="@id/tiempo_dia5"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp" />
+
+            <TextView
+                android:id="@+id/tiempo_temp_actual6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tiempo_icono6"
+                android:layout_toRightOf="@id/tiempo_dia5"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp" />
+
+            <TextView
+                android:id="@+id/tiempo_humedad6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tiempo_dia5"
+                android:layout_below="@+id/tiempo_temp_actual6"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp" />
+
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>
